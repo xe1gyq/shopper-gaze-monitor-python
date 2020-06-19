@@ -42,7 +42,7 @@ POSE_CHECKED = False
 
 # MQTT server environment variables
 TOPIC = "shopper_gaze_monitor"
-MQTT_HOST = "localhost"
+MQTT_HOST = os.getenv('MQTT_HOST')
 MQTT_PORT = 1883
 MQTT_KEEPALIVE_INTERVAL = 60
 
